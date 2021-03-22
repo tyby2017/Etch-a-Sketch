@@ -1,0 +1,25 @@
+body {
+    background-color: #4f6d7a;
+}
+
+#resetBtn {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    top:40px;
+}
+
+#container {
+    margin:auto;
+    padding: 100px;
+    width: 700px;
+    height: 700px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(42px,1fr));
+    gap:1px;
+    
+}
+
+.square {
+    background-color:#ddd;
+}

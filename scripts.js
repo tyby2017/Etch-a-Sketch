@@ -11,7 +11,9 @@ document.getElementById('askSquareNo').addEventListener('click', () => {
     squares.forEach(square => {
         square.remove();
     });
-    answer = Number(prompt('How many squares?'));
+    do {
+        answer = Number(prompt('How many squares? You can choose between 5 and 30'));
+    } while(answer < 5 || answer > 30)    
     createBoard(answer);
     mouseOverEvent();
 });
